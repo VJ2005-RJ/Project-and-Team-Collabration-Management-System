@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="dashboard.html"><span class="brand-mark"></span>ProjectHub</a>
+  <nav class="nav" aria-label="Main"><a href="dashboard.html" class="active" aria-current="page">Dashboard</a><a href="projects.html">Projects</a><a href="team.html">Team</a><a href="tasks.html">Tasks</a><a href="project-details.html">Project details</a><a href="about.html">About</a></nav>
+  <a class="logout" href="index.html">Log out</a>
+</header>
+<main class="page">
+  <div class="page-head">
+    <div><h1>Dashboard</h1><p>Welcome to Project and Team Collaboration System</p></div><div class="who"><span>V</span>Vaibhav</div>
+  </div>
+<section class="stats" aria-label="Summary">
+  <div class="stat"><span class="stat-label">Total projects</span><strong>05</strong><span class="stat-note">Projects created</span></div>
+  <div class="stat"><span class="stat-label">Active projects</span><strong>03</strong><span class="stat-note">Currently working</span></div>
+  <div class="stat"><span class="stat-label">Team members</span><strong>12</strong><span class="stat-note">Active members</span></div>
+  <div class="stat"><span class="stat-label">Completed</span><strong>02</strong><span class="stat-note">Projects finished</span></div>
+</section>
+<section class="recent">
+  <div class="recent-head"><h2>Recent projects</h2><a href="projects.html">View all projects</a></div>
+  <div class="table-wrap"><table>
+    <tr><th>Project name</th><th>Team</th><th>Progress</th><th>Status</th></tr>
+    <tr><td>College Website</td><td>Team A</td><td><div class="pct"><div class="bar"><div class="bar-fill" style="width:80%"></div></div><b>80%</b></div></td><td><span class="status progress">In Progress</span></td></tr>
+    <tr><td>Mobile Application</td><td>Team B</td><td><div class="pct"><div class="bar"><div class="bar-fill" style="width:60%"></div></div><b>60%</b></div></td><td><span class="status progress">In Progress</span></td></tr>
+    <tr><td>Student Portal</td><td>Team C</td><td><div class="pct"><div class="bar"><div class="bar-fill done" style="width:100%"></div></div><b>100%</b></div></td><td><span class="status completed">Completed</span></td></tr>
+  </table></div>
+</section>
+</main>
+</body>
+</html>
