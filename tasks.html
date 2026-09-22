@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tasks</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tasks.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="dashboard.html"><span class="brand-mark"></span>ProjectHub</a>
+  <nav class="nav" aria-label="Main"><a href="dashboard.html">Dashboard</a><a href="projects.html">Projects</a><a href="team.html">Team</a><a href="tasks.html" class="active" aria-current="page">Tasks</a><a href="project-details.html">Project details</a><a href="about.html">About</a></nav>
+  <a class="logout" href="index.html">Log out</a>
+</header>
+<main class="page">
+  <div class="page-head">
+    <div><h1>Tasks</h1><p>Track project tasks and activities</p></div>
+  </div>
+<section class="panel"><div class="table-wrap"><table>
+<tr><th>Task</th><th>Project</th><th>Assigned to</th><th>Priority</th><th>Status</th></tr>
+<tr><td class="task-name">Design Homepage</td><td class="project-name">College Website</td><td><span class="who"><i>R</i>Rahul</span></td><td><span class="prio high">High</span></td><td><span class="status completed">Completed</span></td></tr>
+<tr><td class="task-name">Create Login Page</td><td class="project-name">Student Portal</td><td><span class="who"><i>V</i>Vaibhav</span></td><td><span class="prio high">High</span></td><td><span class="status progress">In Progress</span></td></tr>
+<tr><td class="task-name">Database Design</td><td class="project-name">Mobile Application</td><td><span class="who"><i>A</i>Ayush</span></td><td><span class="prio medium">Medium</span></td><td><span class="status progress">In Progress</span></td></tr>
+<tr><td class="task-name">Testing</td><td class="project-name">Library Management</td><td><span class="who"><i>P</i>Priya</span></td><td><span class="prio low">Low</span></td><td><span class="status pending">Pending</span></td></tr>
+</table></div></section>
+</main>
+</body>
+</html>
