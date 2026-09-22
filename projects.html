@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="projects.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="dashboard.html"><span class="brand-mark"></span>ProjectHub</a>
+  <nav class="nav" aria-label="Main"><a href="dashboard.html">Dashboard</a><a href="projects.html" class="active" aria-current="page">Projects</a><a href="team.html">Team</a><a href="tasks.html">Tasks</a><a href="project-details.html">Project details</a><a href="about.html">About</a></nav>
+  <a class="logout" href="index.html">Log out</a>
+</header>
+<main class="page">
+  <div class="page-head">
+    <div><h1>Projects</h1><p>Manage all your projects</p></div>
+  </div>
+<section class="list">
+  <article class="project">
+    <div><h2>College Website</h2><p class="project-desc">Development of a modern college website.</p></div>
+    <dl class="meta"><div><dt>Team</dt><dd>Team A</dd></div><div><dt>Deadline</dt><dd>20 September 2026</dd></div></dl>
+    <div><div class="meter-label"><span>Progress</span><b>80%</b></div><div class="bar"><div class="bar-fill" style="width:80%"></div></div></div>
+    <span class="status progress">In Progress</span>
+  </article>
+  <article class="project">
+    <div><h2>Mobile Application</h2><p class="project-desc">A mobile application for student communication.</p></div>
+    <dl class="meta"><div><dt>Team</dt><dd>Team B</dd></div><div><dt>Deadline</dt><dd>25 September 2026</dd></div></dl>
+    <div><div class="meter-label"><span>Progress</span><b>60%</b></div><div class="bar"><div class="bar-fill" style="width:60%"></div></div></div>
+    <span class="status progress">In Progress</span>
+  </article>
+  <article class="project is-done">
+    <div><h2>Student Portal</h2><p class="project-desc">Online portal for managing student information.</p></div>
+    <dl class="meta"><div><dt>Team</dt><dd>Team C</dd></div><div><dt>Deadline</dt><dd>10 September 2026</dd></div></dl>
+    <div><div class="meter-label"><span>Progress</span><b>100%</b></div><div class="bar"><div class="bar-fill done" style="width:100%"></div></div></div>
+    <span class="status completed">Completed</span>
+  </article>
+  <article class="project is-pending">
+    <div><h2>Library Management</h2><p class="project-desc">Website for managing library books and students.</p></div>
+    <dl class="meta"><div><dt>Team</dt><dd>Team D</dd></div><div><dt>Deadline</dt><dd>30 September 2026</dd></div></dl>
+    <div><div class="meter-label"><span>Progress</span><b>40%</b></div><div class="bar"><div class="bar-fill" style="width:40%"></div></div></div>
+    <span class="status pending">Pending</span>
+  </article>
+</section>
+</main>
+</body>
+</html>
