@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- ---------- Sidebar ---------- -->
+  <aside class="sidebar">
+    <h2>ProjectHub</h2>
+    <a href="dashboard.html" class="active">Dashboard</a>
+    <a href="projects.html">Projects</a>
+    <a href="team.html">Team</a>
+    <a href="tasks.html">Tasks</a>
+    <a href="project-details.html">Project Details</a>
+    <a href="about.html">About</a>
+    <a href="index.html">Logout</a>
+  </aside>
+
+  <!-- ---------- Main ---------- -->
+  <main class="main">
+
+    <header>
+      <div>
+        <h1>Dashboard</h1>
+        <p>Overview of all projects and team activity</p>
+      </div>
+      <div class="profile">Vaibhav Jain</div>
+    </header>
+
+    <!-- Stats strip -->
+    <section class="cards">
+      <div class="card">
+        <h3>Total Projects</h3>
+        <h2>4</h2>
+        <p>Across 4 teams</p>
+      </div>
+      <div class="card">
+        <h3>In Progress</h3>
+        <h2>2</h2>
+        <p>College Website, Mobile App</p>
+      </div>
+      <div class="card">
+        <h3>Completed</h3>
+        <h2>1</h2>
+        <p>Student Portal</p>
+      </div>
+      <div class="card">
+        <h3>Team Members</h3>
+        <h2>12</h2>
+        <p>3 members per team</p>
+      </div>
+    </section>
+
+    <!-- Split: project progress + side panels -->
+    <section class="dash-split">
+
+      <!-- Left: project progress table -->
+      <div class="section-box">
+        <h2>Project Progress</h2>
+        <table>
+          <tr>
+            <th>Project</th>
+            <th>Team</th>
+            <th>Progress</th>
+            <th>Status</th>
+          </tr>
+          <tr>
+            <td>College Website</td>
+            <td>Team A</td>
+            <td>
+              <div class="progress-bar bar-sm">
+                <div class="progress-fill" style="width:80%">80%</div>
+              </div>
+            </td>
+            <td><span class="status progress">In Progress</span></td>
+          </tr>
+          <tr>
+            <td>Mobile Application</td>
+            <td>Team B</td>
+            <td>
+              <div class="progress-bar bar-sm">
+                <div class="progress-fill" style="width:60%">60%</div>
+              </div>
+            </td>
+            <td><span class="status progress">In Progress</span></td>
+          </tr>
+          <tr>
+            <td>Student Portal</td>
+            <td>Team C</td>
+            <td>
+              <div class="progress-bar bar-sm">
+                <div class="progress-fill fill-done" style="width:100%">100%</div>
+              </div>
+            </td>
+            <td><span class="status completed">Completed</span></td>
+          </tr>
+          <tr>
+            <td>Library Management</td>
+            <td>Team D</td>
+            <td>
+              <div class="progress-bar bar-sm">
+                <div class="progress-fill fill-wait" style="width:40%">40%</div>
+              </div>
+            </td>
+            <td><span class="status pending">Pending</span></td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Right: side panels -->
+      <div class="dash-side">
+
+        <div class="section-box">
+          <h2>Upcoming Deadlines</h2>
+          <ul class="deadline-list">
+            <li>
+              <span class="date-chip">10 Sep</span>
+              <div>
+                <b>Student Portal</b>
+                <p>Team C</p>
+              </div>
+            </li>
+            <li>
+              <span class="date-chip">20 Sep</span>
+              <div>
+                <b>College Website</b>
+                <p>Team A</p>
+              </div>
+            </li>
+            <li>
+              <span class="date-chip">25 Sep</span>
+              <div>
+                <b>Mobile Application</b>
+                <p>Team B</p>
+              </div>
+            </li>
+            <li>
+              <span class="date-chip">30 Sep</span>
+              <div>
+                <b>Library Management</b>
+                <p>Team D</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="section-box">
+          <h2>Recent Activity</h2>
+          <ul class="activity-list">
+            <li>
+              <b>Rahul</b> completed <b>Design Homepage</b>
+              <p>2 hours ago</p>
+            </li>
+            <li>
+              <b>Vaibhav</b> started <b>Create Login Page</b>
+              <p>Yesterday</p>
+            </li>
+            <li>
+              <b>Ayush</b> updated <b>Database Design</b>
+              <p>2 days ago</p>
+            </li>
+            <li>
+              <b>Priya</b> was assigned <b>Testing</b>
+              <p>3 days ago</p>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+</div>
+
+</body>
+</html>
